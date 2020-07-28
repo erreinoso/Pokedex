@@ -12,7 +12,6 @@ class Pokemon extends React.Component {
     return (
       <div>
         <h2>{this.props.name}</h2>
-        <p>M</p>
         <ul>{PokeType}</ul>
       </div>
     );

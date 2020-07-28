@@ -7,7 +7,7 @@ class PokeList extends React.Component {
     const newPokeList = this.props.list.map((element) => {
       console.log(element.name);
       return (
-        <li className="card ">
+        <li className={`card card${element.id}`}>
           <Pokemon
             name={element.name}
             types={element.types}
