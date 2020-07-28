@@ -21,14 +21,10 @@ h1 {
 .pokelist {
   display: inline-block;
   flex-direction: row;
-  // grid-template-columns: repeat(7, 1fr);
-  // grid-template-rows: 25% 25% 25% 25%;
-  // grid-gap: 10px;
 }
 .card {
   width: 150px;
   height: 250px;
-  grid-column: span 3;
   background-color: lightsalmon;
   border: 1px solid grey;
   margin: 25px;
