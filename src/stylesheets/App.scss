@@ -5,21 +5,50 @@
   margin: 0px;
   padding: 50px 20px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 body {
   background-image: url(../images/grass.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   list-style: none;
 }
 
+h1 {
+  color: lightyellow;
+}
+.pokelist {
+  display: inline-block;
+  flex-direction: row;
+  // grid-template-columns: repeat(7, 1fr);
+  // grid-template-rows: 25% 25% 25% 25%;
+  // grid-gap: 10px;
+}
 .card {
-  background-color: lightyellow;
+  width: 150px;
+  height: 250px;
+  grid-column: span 3;
+  background-color: lightsalmon;
   border: 1px solid grey;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   h2 {
     border: 1px solid pink;
+    text-transform: capitalize;
+    margin: 0px;
   }
-  ul {
+  .types {
     list-style: none;
     border: 1px solid blue;
+    background-color: lightblue;
+    text-transform: capitalize;
   }
+}
+
+img {
+  width: 100%;
 }

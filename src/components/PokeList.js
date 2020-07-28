@@ -11,7 +11,7 @@ class PokeList extends React.Component {
           <Pokemon
             name={element.name}
             types={element.types}
-            icon={element.url}
+            url={element.url}
           />
         </li>
       );
