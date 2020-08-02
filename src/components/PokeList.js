@@ -5,7 +5,6 @@ import '../stylesheets/PokeList.scss';
 class PokeList extends React.Component {
   render() {
     const newPokeList = this.props.list.map((element) => {
-      console.log(element.name);
       return (
         <li className={`card card${element.id}`}>
           <Pokemon
@@ -16,7 +15,6 @@ class PokeList extends React.Component {
         </li>
       );
     });
-    console.log(newPokeList);
     return <ul className="pokeList">{newPokeList}</ul>;
   }
 }

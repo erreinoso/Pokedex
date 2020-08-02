@@ -9,7 +9,6 @@ class App extends React.Component {
     this.state = { list: listFromApi };
   }
   render() {
-    console.log(this.state.list);
     return (
       <div className="wrapper">
         <h1>Mi lista de pokemon</h1>
